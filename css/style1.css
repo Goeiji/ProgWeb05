@@ -1,0 +1,54 @@
+/*Style para exercicio 1*/ 
+.borda{
+    border: 3px solid rgba(55, 139, 248, 0.74);
+    border-radius: 10px;
+}
+
+textarea{
+    border: 3px solid paleturquoise;
+    border-radius: 10px;
+    resize: none;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+label{
+    font-family: fantasy;
+    font-size: large;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: seagreen;
+    color: seashell;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px gray;
+}
+
+.button:hover{
+    background-color: teal;
+}
+
+.button:active{
+    background-color: teal;
+    box-shadow: 0 2px rgb(68, 68, 68);
+    transform: translateY(5px);
+}
+
+body{
+    padding: 3px;
+    background-image: linear-gradient(to right, rgb(93, 2, 121), rgb(116, 59, 250), 
+    rgb(38, 132, 255), skyblue, rgb(0, 94, 89));
+}
+
+header{
+    margin: 3px;
+    color: cornflowerblue;
+    text-shadow: 1px 1px rgb(0, 81, 83);
+}
+
+input{
+    color: white;
+}

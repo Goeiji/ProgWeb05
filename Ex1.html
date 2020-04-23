@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/repetir.js"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Exercício 1</title>
+</head>
+<header>
+    <div>
+        <h1><img src="imagens/fruta.png" alt="maçã" height="100" width="95"> Programa: Repetição de Frutas</h1>
+    </div>
+</header>
+<body>
+    <div>
+        <div class="borda">
+            <label for="fruta">Fruta:</label>
+            <input type="text" id="fruta" name="fruta" autofocus>
+        </div>
+        <br>
+        <div class="borda">
+            <label for="num">Número:</label>
+            <input type="number" name="num" id="num" min="0">
+        </div>
+    </div>
+    <br>
+    <button class="button" type="button" onclick="repetir()">
+        Repetir Fruta
+        <i class="material-icons right">send</i>
+    </button>
+    <br>
+    <br>
+    <div>
+        <label for="tarea" class="pink-text text-lighten-2">Resultado:</label>
+            <div class="borda">
+                <textarea name="tarea" id="tarea" cols="30" rows="10" disabled></textarea>
+            </div>
+    </div>
+</body>
+</html>

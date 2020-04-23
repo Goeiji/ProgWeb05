@@ -1,0 +1,50 @@
+/*Style para o exercício 2*/
+
+button{
+    box-shadow: 0px 2px rgb(0, 0, 184);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px;
+}
+
+body{
+    margin: 5px;
+    background-image: linear-gradient(to top, darkcyan 25%, rgb(0, 179, 179) 50%, white );
+}
+
+input{
+    border: 2px solid cadetblue;
+    border-radius: 8px;
+    outline: none;
+}
+
+header{
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+    margin: 6px;
+}
+
+textarea{
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+    background-image: linear-gradient(to top, cyan, rgb(166, 255, 255));
+}
+
+.borda{
+    margin-left: 40%;
+    border: cyan;
+    border-radius: 8px;
+    height: 60px;
+    width: 150px;
+    text-align: center;
+    padding-top: 8px;
+    background-image: linear-gradient(to bottom, #007bff, rgb(0, 0, 184));
+}
+
+label{
+    font-weight: bold;
+    color: rgb(60, 0, 170);
+}

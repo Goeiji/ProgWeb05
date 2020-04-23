@@ -1,0 +1,112 @@
+/*Stylesheet para o exercício 3*/
+
+label, h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border: none;
+    border-bottom: 2px groove rgb(185, 0, 185);
+    background-color: transparent;
+    outline: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(to bottom, gold, rgb(255, 238, 143), orange, rgb(255, 220, 154));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+}
+
+textarea{
+    border-radius: 80px;
+    resize: none;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: rgb(110, 26, 219);
+    background-image: linear-gradient(to top, yellow, rgb(255, 175, 175));
+    animation-name: borderChange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+button{
+    color: white;
+    font-size: 25px;
+    background-color: rgb(122, 88, 0);
+    width: 50px;
+    height: 50px;
+    border-style: solid ;
+    border-radius: 30px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 2px chocolate;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+button:hover {
+    border: solid rgb(221, 155, 108);
+    cursor: pointer;
+}
+
+button:active{
+    transform: translateY(2px);
+    box-shadow: 0px 0px;
+    background-color: purple;
+    border: 5px solid rgb(207, 116, 207);
+}
+
+#header{
+    text-align: center;
+}
+
+#enunc{
+    text-align: center;
+    margin: 30px;
+}
+
+@keyframes colorChange{
+    0%{
+        color: violet;
+        border-radius: 30px;
+    }
+    25%{
+        color: coral;
+        border-radius: 20px;
+    }
+    50%{
+        color: rgb(247, 200, 83);
+        border-radius: 15px;
+    }
+    75%{
+        color: rgb(0, 196, 16);
+        border-radius: 10px;
+    }
+    100%{
+        color: deeppink;
+        border-radius: 5px;
+    }
+}
+
+@keyframes borderChange{
+    from {
+        border-radius: 80px;
+        width: 500px;
+    }
+    to{
+        border-radius: 2px;
+        width: 300px;
+    }
+}

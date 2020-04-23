@@ -1,0 +1,94 @@
+/*Stylesheet para exercício 4*/
+
+/*Loader*/
+.loader{
+   height: 50px;
+   width: 50px;
+   border: rgba(255, 0, 0, 0.1) 10px groove;
+   border-left-color: rgb(211, 186, 131);
+   border-radius: 50%;
+   animation-name: spin;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+    }
+}
+
+/*Estado do loader depois que clicar para exibir as estrelas*/
+.loader-finish{
+  opacity: 0;
+  pointer-events: none;
+  transition: 1.5s;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(circle, rgb(216, 145, 79), rgb(238, 255, 0), red);
+  text-align: center;
+  margin: 0px;
+}
+
+h1{
+  font-family: Gotu,sans-serif;
+}
+
+label{
+  font-family: Gotu, sans-serif;
+  font-weight: bold;
+}
+
+input{
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botao{
+  outline: none;
+  border: solid 2px rgb(179, 0, 0);
+  border-radius: 30px;
+  background-color: rgb(253, 199, 162);
+  box-shadow: 0px 3px rgb(116, 114, 114);
+}
+
+.botao:hover{
+  cursor: pointer;
+  border-color: plum;
+  transition: 0.25s;
+}
+
+.botao:active{
+  transform: translateY(3px);
+  box-shadow: 0px 0px rgb(116, 114, 114);
+}
+
+#par2{
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+}
+
+#result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes fade{
+ from{
+  opacity: 0;
+ } to {
+  opacity: 1;
+ }
+}
+

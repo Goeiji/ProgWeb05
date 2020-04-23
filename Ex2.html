@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/calcular.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Exercício 2</title>
+</head>
+<header>
+    <div>
+        <h1><img src="imagens/chinchila.png" alt="chinchila" height="100" width="90">Programa: Verificar chinchila por ano</h1>
+    </div>
+</header>
+<body>
+    <div>
+        <label for="qtd" >Quantidade de chinchila:</label>
+        <br>
+        <input type="number" id="qtd" name="qtd" min="0">
+    </div>
+    <div>
+        <label for="ano">Anos:</label>
+        <br>
+        <input type="number" name="ano" id="ano" min="0">
+    </div>
+    <br>
+    <div class="borda rounded-circle">
+        <button class="btn btn-primary rounded-circle" type="button" onclick="calcular()">Calcular</button>
+    </div>
+    <br>
+    <div>
+        <label for="text">Número médio de chinchilas a cada ano:</label>
+        <br>
+        <textarea name="text" id="text" cols="50" rows="10" disabled></textarea>
+    </div>
+</body>
+</html>
